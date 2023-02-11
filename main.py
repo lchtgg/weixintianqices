@@ -175,6 +175,34 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
                 "value": wind_dir,
                 "color": get_color()
             },
+            "feelsLike": {
+                "value": feelsLike,
+                "color": get_color()
+            },
+            "windScale": {
+                "value": windScale,
+                "color": get_color()
+            },
+            "windSpeed": {
+                "value": windSpeed,
+                "color": get_color()
+            },
+            "humidity": {
+                "value": humidity,
+                "color": get_color()
+            },
+            "precip": {
+                "value": precip,
+                "color": get_color()
+            },
+            "pressure": {
+                "value": pressure,
+                "color": get_color()
+            },
+            "vis": {
+                "value": vis,
+                "color": get_color()
+            },
             "love_day": {
                 "value": love_days,
                 "color": get_color()
