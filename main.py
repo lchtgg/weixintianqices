@@ -58,7 +58,21 @@ def get_weather(region):
     temp = response["now"]["temp"] + u"\N{DEGREE SIGN}" + "C"
     # 风向
     wind_dir = response["now"]["windDir"]
-    return weather, temp, wind_dir
+    #体感温度
+    feelsLike = response["now"]["feelsLike"]
+    #风力等级
+    windScale = response["now"]["windScale"]
+    #风速
+    windSpeed = response["now"]["windSpeed"]
+    #相对湿度
+    humidity = response["now"]["humidity"]
+    #当前小时累计降水量，默认单位：毫米
+    precip = response["now"]["precip"]
+    #大气压强
+    pressure = response["now"]["pressure"]
+    #能见度
+    vis = response["now"]["vis"]
+    return weather, temp, wind_dir,feelsLike,windScale,windSpeed,humidity,precip,pressure,vis
  
  
 def get_birthday(birthday, year, today):
