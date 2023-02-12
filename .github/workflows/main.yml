@@ -1,9 +1,12 @@
 name: weixin
+# 这个部分用来指定能够触发工作流执行的事件
 on:
-  workflow_dispatch:
-  schedule: 
-    # 代表国际标准时间23点0分，北京时间需要+8小时，代表北京时间上午7点运行
+  # 当对分支main进行push操作的时候，这个工作流就被触发了
+#   push:
+  schedule:
+  # 定时任务，在每天的5点推送天气信息到邮箱
     - cron: '50 23 * * *'
+  workflow_dispatch:
 jobs:
 #将工作流程中运行的所有作业组合在一起
   build:
