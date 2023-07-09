@@ -155,7 +155,7 @@ def send_message(to_user, access_token, region_name, weather, temp, wind_dir, no
         "url": "http://weixin.qq.com/download",
         "topcolor": "#FF0000",
         "data": {
-            "date": {
+            "time": {
                 "value": "{} {}".format(today, week),
                 "color": get_color()
             },
